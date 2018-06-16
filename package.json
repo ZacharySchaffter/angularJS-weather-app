@@ -1,0 +1,21 @@
+{
+  "name": "AngularJS-Weather-App",
+  "version": "1.0.0",
+  "description": "A weather app.",
+  "main": "zacharyschaffter.com",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zachary Schaffter",
+  "license": "ISC"
+}
