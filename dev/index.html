@@ -10,11 +10,6 @@
 
 <body ng-app="weatherApp" ng-controller="widgetCtrl">
 
-<!--<video autoplay class="video-background" loop>
-    <source src="./graphics/video/bg.mp4">
-</video>-->
-
-
 <div class="weather__wrap" ng-if="widgetStatus=='weather'">
     
     <div class="weather">
@@ -41,8 +36,8 @@
                 <div class="hilo__label">LO</div><div class="hilo__temp">{{weatherData1.loTemp}}&deg;</div>
                 
                 <div class="chance-of-rain__symbol">
-                    <img ng-if="weatherData1.popIcon==='rain'" src="./graphics/raindrop.svg" alt="Chance of rain:">
-                    <img ng-if="weatherData1.popIcon==='snow'" src="./graphics/snowflake.svg" alt="Chance of snow:"> 
+                    <img ng-if="weatherData1.popIcon==='rain'" src="./img/raindrop.svg" alt="Chance of rain:">
+                    <img ng-if="weatherData1.popIcon==='snow'" src="./img/snowflake.svg" alt="Chance of snow:"> 
                 </div>
                 <div class="chance-of-rain__percent">
                     {{weatherData1.pop}}%
@@ -52,7 +47,7 @@
             
             <div class="weather__conditions">
                 <div class="weather__current__icon">
-                    <img ng-src="./graphics/icons/monochrome/{{weatherData1.icon}}.svg" alt="{{weatherData1.icon}}">
+                    <img ng-src="./img/icons/monochrome/{{weatherData1.icon}}.svg" alt="{{weatherData1.icon}}">
                 </div>
                 <h2>Conditions</h2>
                 
@@ -71,7 +66,7 @@
                 <h1>Tomorrow</h1>
             </div>
             <div class="weather__future__icon">
-                <img class="condition-icon" ng-src="./graphics/icons/{{weatherData2.icon}}.svg" alt="{{weatherData2.condition}}">
+                <img class="condition-icon" ng-src="./img/icons/{{weatherData2.icon}}.svg" alt="{{weatherData2.condition}}">
             </div>
             <div class="weather__future__condition">
                 <span>{{weatherData2.condition}}</span>
@@ -83,8 +78,8 @@
                 <div class="hilo__label">LO</div> 
                 <div class="hilo__temp">{{weatherData2.loTemp}}&deg;</div>
                 <div class="chance-of-rain__symbol">
-                    <img ng-if="weatherData2.popIcon==='rain'" src="./graphics/raindrop.svg" alt="Chance of rain:">
-                    <img ng-if="weatherData2.popIcon==='snow'" src="./graphics/snowflake.svg" alt="Chance of snow:">
+                    <img ng-if="weatherData2.popIcon==='rain'" src="./img/raindrop.svg" alt="Chance of rain:">
+                    <img ng-if="weatherData2.popIcon==='snow'" src="./img/snowflake.svg" alt="Chance of snow:">
                 </div>
                 <div class="chance-of-rain__percent">
                     {{weatherData2.pop}}%
@@ -99,7 +94,7 @@
                 <h1>{{weatherData3.dayOfWeek}}</h1> 
             </div>
             <div class="weather__future__icon">
-                <img class="condition-icon" ng-src="./graphics/icons/{{weatherData3.icon}}.svg" alt="{{weatherData3.condition}}">
+                <img class="condition-icon" ng-src="./img/icons/{{weatherData3.icon}}.svg" alt="{{weatherData3.condition}}">
             </div>
             <div class="weather__future__condition">
                 <span>{{weatherData3.condition}}</span>
@@ -111,8 +106,8 @@
                 <div class="hilo__label">LO</div> 
                 <div class="hilo__temp">{{weatherData3.loTemp}}&deg;</div>
                 <div class="chance-of-rain__symbol">
-                    <img ng-if="weatherData3.popIcon==='rain'" src="./graphics/raindrop.svg" alt="Chance of rain:">
-                    <img ng-if="weatherData3.popIcon==='snow'" src="./graphics/snowflake.svg" alt="Chance of snow:">
+                    <img ng-if="weatherData3.popIcon==='rain'" src="./img/raindrop.svg" alt="Chance of rain:">
+                    <img ng-if="weatherData3.popIcon==='snow'" src="./img/snowflake.svg" alt="Chance of snow:">
                 </div>
                 <div class="chance-of-rain__percent">
                     {{weatherData3.pop}}%

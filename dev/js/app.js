@@ -1,6 +1,6 @@
 var app = angular.module('weatherApp', []);
 
-app.controller('widgetCtrl', function ($scope, $http, $timeout) {
+app.controller('widgetCtrl', function($scope, $http, $timeout) {
     //API key
     var apiKey = config.apiKey; //api key from wunderground
     var updateDelay = 300000; //update delay, in milliseconds
@@ -81,7 +81,7 @@ app.controller('widgetCtrl', function ($scope, $http, $timeout) {
                 return "cloudy";
             case "partlysunny":
             case "partlycloudy":
-                return "partlycloudy";
+                return "partly-cloudy";
             case "tstorms":
             case "chancetstorms":
                 return "tstorms";
